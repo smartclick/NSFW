@@ -60,5 +60,5 @@ pod 'NSFW'
 #### Carthage
 
 ```
-github "smartclick/NSFW" ~> 7.0
+github "smartclick/NSFW"
 ```
