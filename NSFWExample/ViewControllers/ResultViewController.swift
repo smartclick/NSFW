@@ -13,7 +13,7 @@ class ResultViewController: UIViewController {
     @IBOutlet weak var drawingConfLabel: UILabel!
     @IBOutlet weak var hentaiConfLabel: UILabel!
     @IBOutlet weak var neutralConfLabel: UILabel!
-    @IBOutlet weak var provocativeLabel: UILabel!
+    @IBOutlet weak var sexyLabel: UILabel!
     @IBOutlet weak var pornographicLabel: UILabel!
     @IBOutlet weak var closeButton: UIButton!        
     
@@ -43,7 +43,7 @@ extension ResultViewController {
         drawingConfLabel.text = detectResult.drawing.toString()
         hentaiConfLabel.text = detectResult.hentai.toString()
         neutralConfLabel.text = detectResult.neutral.toString()
-        provocativeLabel.text = detectResult.provocative.toString()
+        sexyLabel.text = detectResult.sexy.toString()
         pornographicLabel.text = detectResult.pornagraphic.toString()
     }
     

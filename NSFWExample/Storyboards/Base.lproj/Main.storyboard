@@ -204,8 +204,8 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="raZ-Ek-UAT">
                                         <rect key="frame" x="16" y="0.0" width="343" height="77.333333333333329"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Drawing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Li1-YC-AR7">
-                                                <rect key="frame" x="0.0" y="0.0" width="79.666666666666671" height="24"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Neutral" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Li1-YC-AR7">
+                                                <rect key="frame" x="0.0" y="0.0" width="69.666666666666671" height="24"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.93999999999999995" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -231,8 +231,8 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xJ2-RB-wZw">
                                         <rect key="frame" x="16" y="77.333333333333314" width="343" height="77"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hentai" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qq2-dQ-KPj">
-                                                <rect key="frame" x="0.0" y="0.0" width="62" height="24"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Drawing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qq2-dQ-KPj">
+                                                <rect key="frame" x="0.0" y="0.0" width="79.666666666666671" height="24"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.93999999999999995" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -258,8 +258,8 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ow9-ey-6bm">
                                         <rect key="frame" x="16" y="154.33333333333337" width="343" height="77.333333333333314"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Neutral" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3s1-Lg-Agn">
-                                                <rect key="frame" x="0.0" y="0.0" width="69.666666666666671" height="24"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hentai" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3s1-Lg-Agn">
+                                                <rect key="frame" x="0.0" y="0.0" width="62" height="24"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.93999999999999995" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -285,8 +285,8 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4An-Eh-rbl">
                                         <rect key="frame" x="16" y="231.66666666666663" width="343" height="77"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Provocative" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Av-kK-5EG">
-                                                <rect key="frame" x="0.0" y="0.0" width="112.66666666666667" height="24"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sexy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Av-kK-5EG">
+                                                <rect key="frame" x="0.0" y="0.0" width="45.666666666666664" height="24"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.93999999999999995" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -372,12 +372,12 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="closeButton" destination="18L-lP-S9G" id="V01-sz-Lrc"/>
-                        <outlet property="drawingConfLabel" destination="c1C-DD-vzs" id="ElF-GM-Ucl"/>
-                        <outlet property="hentaiConfLabel" destination="ydG-ba-uNj" id="iAQ-7V-5eK"/>
+                        <outlet property="drawingConfLabel" destination="ydG-ba-uNj" id="wwj-Or-g9s"/>
+                        <outlet property="hentaiConfLabel" destination="dFi-cO-VzY" id="j64-fl-Stj"/>
                         <outlet property="mainImageView" destination="xHg-k9-Vrk" id="hqP-zH-ULM"/>
-                        <outlet property="neutralConfLabel" destination="dFi-cO-VzY" id="Kzc-Mh-bPg"/>
+                        <outlet property="neutralConfLabel" destination="c1C-DD-vzs" id="6Ze-j6-wbE"/>
                         <outlet property="pornographicLabel" destination="iT4-Hq-HhJ" id="ifr-Gk-yeJ"/>
-                        <outlet property="provocativeLabel" destination="6FQ-hx-tLk" id="7Fw-zQ-Xsw"/>
+                        <outlet property="sexyLabel" destination="6FQ-hx-tLk" id="CQ9-2g-1NY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m5f-wn-myK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
