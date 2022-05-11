@@ -5,6 +5,7 @@
 //  Created by Sevak Soghoyan on 5/10/22.
 //
 
+#if canImport(UIKit)
 import UIKit
 
 extension UIImage {
@@ -17,3 +18,4 @@ extension UIImage {
         return image
     }
 }
+#endif

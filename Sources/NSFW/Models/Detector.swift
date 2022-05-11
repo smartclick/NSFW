@@ -5,6 +5,7 @@
 //  Created by Sevak Soghoyan on 5/10/22.
 //
 
+#if canImport(UIKit)
 import UIKit
 import Vision
 import CoreML
@@ -19,7 +20,7 @@ public class Detectror {
         }
         self.nsfwModel = nsfwModel
     }
-
+    
     public func scan(image: UIImage, completion: @escaping (_ result: Result) -> Void) {
         let resizedImage = image.resized(to: CGSize(width: 224, height: 224))
         let requestHandler: VNImageRequestHandler?
@@ -64,3 +65,4 @@ private extension Detectror {
         return SuccessResult(results: floatVals.softmax())
     }
 }
+#endif

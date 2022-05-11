@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		66B2DBFA282A78090001040B /* NSFW.docc in Sources */ = {isa = PBXBuildFile; fileRef = 66B2DBF9282A78090001040B /* NSFW.docc */; };
 		66B2DBFB282A78090001040B /* NSFW.h in Headers */ = {isa = PBXBuildFile; fileRef = 66B2DBF8282A78090001040B /* NSFW.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		66B2DC28282A79720001040B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B2DC27282A79720001040B /* AppDelegate.swift */; };
 		66B2DC2A282A79720001040B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B2DC29282A79720001040B /* SceneDelegate.swift */; };
@@ -30,7 +29,6 @@
 /* Begin PBXFileReference section */
 		66B2DBF5282A78090001040B /* NSFW.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NSFW.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		66B2DBF8282A78090001040B /* NSFW.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSFW.h; sourceTree = "<group>"; };
-		66B2DBF9282A78090001040B /* NSFW.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = NSFW.docc; sourceTree = "<group>"; };
 		66B2DC25282A79720001040B /* NSFWExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSFWExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66B2DC27282A79720001040B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		66B2DC29282A79720001040B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,10 +67,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		668E02B1282B9398005F9069 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				668E02B2282B9402005F9069 /* Supporting Files */,
+				66B2DBF7282A78090001040B /* NSFW */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		668E02B2282B9402005F9069 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				66B2DBF8282A78090001040B /* NSFW.h */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		66B2DBEB282A78090001040B = {
 			isa = PBXGroup;
 			children = (
-				66B2DBF7282A78090001040B /* NSFW */,
+				668E02B1282B9398005F9069 /* Sources */,
 				66B2DC26282A79720001040B /* NSFWExample */,
 				66B2DBF6282A78090001040B /* Products */,
 			);
@@ -93,8 +108,6 @@
 				66B2DC43282A83D70001040B /* Extensions */,
 				66B2DC3C282A7B050001040B /* Models */,
 				66B2DC39282A7A330001040B /* Resources */,
-				66B2DBF8282A78090001040B /* NSFW.h */,
-				66B2DBF9282A78090001040B /* NSFW.docc */,
 			);
 			path = NSFW;
 			sourceTree = "<group>";
@@ -300,7 +313,6 @@
 				66B2DC3E282A7B650001040B /* Detector.swift in Sources */,
 				66B2DC45282A83E20001040B /* Array.swift in Sources */,
 				66B2DC3B282A7A330001040B /* NSFW.mlmodel in Sources */,
-				66B2DBFA282A78090001040B /* NSFW.docc in Sources */,
 				66B2DC47282A877D0001040B /* UIImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -475,6 +487,7 @@
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -484,6 +497,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ai.smartclick.NSFW;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -504,6 +518,7 @@
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -513,6 +528,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ai.smartclick.NSFW;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
