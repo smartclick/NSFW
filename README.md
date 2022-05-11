@@ -10,6 +10,7 @@
 <a href="https://raw.githubusercontent.com/smartclick/NSFW/master/LICENSE"><img src="https://img.shields.io/cocoapods/l/Kingfisher.svg?style=flat"></a>
 <a href="https://smartclick.ai/api/nsfw-detection/"><img src="https://img.shields.io/cocoapods/p/NSFW.svg?style=flat"></a>
 </p>
+
 # NSFW
 
 ## Features
