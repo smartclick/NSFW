@@ -1,10 +1,10 @@
 Pod::Spec.new do |spec|
   spec.name         = "NSFW"
   spec.version      = "0.0.4"
-  spec.summary      = "A Cocoapods library for checking NSFW in Images"
+  spec.summary      = "The NSFW detector automatically identifies any inappropriate content in images."
 
   spec.description  = <<-DESC
-Our adult content detection technology can recognize any not-safe-for-work (NSFW) content in an image.
+Our adult content detection technology scans images and filters out any offensive content that can be considered not suitable or safe for work. The AI-powered NSFW detector recognizes offensive content in real time and helps keep the websites safe and free from improper content.
                    DESC
 
   spec.homepage     = "https://github.com/smartclick/NSFW"

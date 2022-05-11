@@ -13,6 +13,8 @@
 
 # NSFW
 
+Our adult content detection technology scans images and filters out any offensive content that can be considered not suitable or safe for work. The AI-powered NSFW detector recognizes offensive content in real time and helps keep the websites safe and free from improper content.
+
 ## Features
 
 - [x] Scanning image for Nudity(Hentai, Sexy, Pornographic)
