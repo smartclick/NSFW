@@ -11,6 +11,7 @@
 <a href="https://smartclick.ai/api/nsfw-detection/"><img src="https://img.shields.io/cocoapods/p/NSFW.svg?style=flat"></a>
 </p>
 # NSFW
+
 ## Features
 
 - [x] Scanning image for Nudity(Hentai, Sexy, Pornographic)
