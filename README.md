@@ -51,17 +51,11 @@ detector.scan(image: image) { result in
 #### CocoaPods
 
 ```ruby
-source 'https://github.com/CocoaPods/Specs.git'
-platform :ios, '12.0'
-use_frameworks!
-
-target 'MyApp' do
-  pod 'Kingfisher', '~> 7.0'
-end
+pod 'NSFW'
 ```
 
 #### Carthage
 
 ```
-github "onevcat/Kingfisher" ~> 7.0
+github "smartclick/NSFW" ~> 7.0
 ```
