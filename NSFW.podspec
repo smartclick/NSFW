@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "NSFW"
-  spec.version      = "0.0.2"
+  spec.version      = "0.0.4"
   spec.summary      = "A Cocoapods library for checking NSFW in Images"
 
   spec.description  = <<-DESC

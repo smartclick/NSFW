@@ -15,7 +15,6 @@
 
 - [x] Scanning image for Nudity(Hentai, Sexy, Pornographic)
 - [x] Scanning image for Drawing and Neutral
-- [x] Useful image extensions and.
 
 
 ## Usage
