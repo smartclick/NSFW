@@ -10,6 +10,7 @@ import UIKit
 import Vision
 import CoreML
 
+@available(iOS 13.0, *)
 public class Detectror {
     private let nsfwModel: VNCoreMLModel
 
