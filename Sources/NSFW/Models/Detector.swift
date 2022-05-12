@@ -8,7 +8,7 @@
 import Vision
 import CoreML
 
-public class Detectror {
+public class Detector {
     private let nsfwModel: VNCoreMLModel
 
     public required init() {
@@ -17,7 +17,7 @@ public class Detectror {
         guard let nsfwModel = try? VNCoreMLModel(for: NSFWModel(configuration: configuration).model) else {
             fatalError("NSFW Model should always be valid")
         }
-        #elseif canImport(AppKit)
+        #elseif canImport(AppKit)        
         let url = Bundle(for: Self.self).url(forResource: "NSFWModel", withExtension:"mlmodelc")!
         guard let nsfwModel = try? VNCoreMLModel(for: MLModel(contentsOf: url, configuration: configuration)) else {
             fatalError("NSFW Model should always be valid")
@@ -40,7 +40,7 @@ public class Detectror {
     }
 }
 
-private extension Detectror {
+private extension Detector {
     private func makeRequest(requestHandler: VNImageRequestHandler?, completion: @escaping (_ result: Result) -> Void) {
         guard let requestHandler = requestHandler else {
             completion(.error(NSError(domain: "either cgImage or ciImage must be set inside of UIImage", code: 0, userInfo: nil)))

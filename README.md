@@ -24,7 +24,7 @@ Our adult content detection technology scans images and filters out any offensiv
 ## Usage
 
 ```swift
-let detector = Detectror()
+let detector = Detector()
 detector.scan(image: image) { result in    
     switch result {    
     case .success(let successResult):

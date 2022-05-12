@@ -17,8 +17,8 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var takeButtonShadowView: UIView!
     @IBOutlet weak var loader: UIActivityIndicatorView!
     
-    lazy var detector: Detectror = {
-        return Detectror()
+    lazy var detector: Detector = {
+        return Detector()
     }()
     
     lazy var imagePicker: UIImagePickerController = {
