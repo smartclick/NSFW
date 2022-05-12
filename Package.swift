@@ -3,9 +3,7 @@ import PackageDescription
 
 let package = Package(
     name: "NSFW",
-    platforms: [
-        .iOS(.v13)
-    ],
+    platforms: [.iOS(.v13), .macOS(.v10_15)],
     products: [
         .library(
             name: "NSFW",
@@ -17,7 +15,7 @@ let package = Package(
             name: "NSFW",
             dependencies: [],
             path: "Sources",
-	    resources: [.copy("Sources/Resources/NSFW.mlmodel")])
+            resources: [.copy("NSFW/Resources/NSFWModel.mlmodel")])
     ],
     swiftLanguageVersions: [.v4_2]
 )

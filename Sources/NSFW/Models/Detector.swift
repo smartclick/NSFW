@@ -5,21 +5,24 @@
 //  Created by Sevak Soghoyan on 5/10/22.
 //
 
-#if canImport(UIKit)
-import UIKit
-#endif
 import Vision
 import CoreML
 
-@available(iOS 13.0, *)
 public class Detectror {
     private let nsfwModel: VNCoreMLModel
 
     public required init() {
         let configuration = MLModelConfiguration()
-        guard let nsfwModel = try? VNCoreMLModel(for: NSFW(configuration: configuration).model) else {
+        #if canImport(UIKit)
+        guard let nsfwModel = try? VNCoreMLModel(for: NSFWModel(configuration: configuration).model) else {
             fatalError("NSFW Model should always be valid")
         }
+        #elseif canImport(AppKit)
+        let url = Bundle.main.url(forResource: "NSFWModel", withExtension:"mlmodelc")!
+        guard let nsfwModel = try? VNCoreMLModel(for: MLModel(contentsOf: url, configuration: configuration)) else {
+            fatalError("NSFW Model should always be valid")
+        }
+        #endif
         self.nsfwModel = nsfwModel
     }
         
