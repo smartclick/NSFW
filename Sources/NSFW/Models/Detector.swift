@@ -18,7 +18,7 @@ public class Detectror {
             fatalError("NSFW Model should always be valid")
         }
         #elseif canImport(AppKit)
-        let url = Bundle(for: self).url(forResource: "NSFWModel", withExtension:"mlmodelc")!
+        let url = Bundle(for: Self).url(forResource: "NSFWModel", withExtension:"mlmodelc")!
         guard let nsfwModel = try? VNCoreMLModel(for: MLModel(contentsOf: url, configuration: configuration)) else {
             fatalError("NSFW Model should always be valid")
         }
