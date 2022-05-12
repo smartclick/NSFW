@@ -25,7 +25,8 @@
 		66B2DC51282AAB6E0001040B /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B2DC50282AAB6E0001040B /* ResultViewController.swift */; };
 		66B2DC56282AB5210001040B /* UIStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B2DC55282AB5210001040B /* UIStoryboard.swift */; };
 		66B2DC5A282AB9090001040B /* Float.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B2DC59282AB9090001040B /* Float.swift */; };
-		66E4455F282D37E2001BEFC2 /* NSFWModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 66E4455E282D37E2001BEFC2 /* NSFWModel.mlmodel */; };
+		66E44565282D4239001BEFC2 /* NSFWModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E44564282D4239001BEFC2 /* NSFWModel.swift */; };
+		66E44567282D4271001BEFC2 /* NSFWModel.mlmodelc in Resources */ = {isa = PBXBuildFile; fileRef = 66E44566282D4271001BEFC2 /* NSFWModel.mlmodelc */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,7 +51,8 @@
 		66B2DC50282AAB6E0001040B /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		66B2DC55282AB5210001040B /* UIStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStoryboard.swift; sourceTree = "<group>"; };
 		66B2DC59282AB9090001040B /* Float.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Float.swift; sourceTree = "<group>"; };
-		66E4455E282D37E2001BEFC2 /* NSFWModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = NSFWModel.mlmodel; sourceTree = "<group>"; };
+		66E44564282D4239001BEFC2 /* NSFWModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSFWModel.swift; sourceTree = "<group>"; };
+		66E44566282D4271001BEFC2 /* NSFWModel.mlmodelc */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = NSFWModel.mlmodelc; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,7 +141,7 @@
 		66B2DC39282A7A330001040B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				66E4455E282D37E2001BEFC2 /* NSFWModel.mlmodel */,
+				66E44566282D4271001BEFC2 /* NSFWModel.mlmodelc */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -150,6 +152,7 @@
 				66B2DC3D282A7B650001040B /* Detector.swift */,
 				66B2DC3F282A7C720001040B /* SuccessResult.swift */,
 				66B2DC41282A81510001040B /* Result.swift */,
+				66E44564282D4239001BEFC2 /* NSFWModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -302,6 +305,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66E44567282D4271001BEFC2 /* NSFWModel.mlmodelc in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,12 +326,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66E4455F282D37E2001BEFC2 /* NSFWModel.mlmodel in Sources */,
 				669BA842282CE4C200265771 /* Image.swift in Sources */,
 				66B2DC40282A7C720001040B /* SuccessResult.swift in Sources */,
 				66B2DC42282A81510001040B /* Result.swift in Sources */,
 				66B2DC3E282A7B650001040B /* Detector.swift in Sources */,
 				669BA843282CE4C200265771 /* NSImage.swift in Sources */,
+				66E44565282D4239001BEFC2 /* NSFWModel.swift in Sources */,
 				66B2DC45282A83E20001040B /* Array.swift in Sources */,
 				66B2DC47282A877D0001040B /* UIImage.swift in Sources */,
 			);
