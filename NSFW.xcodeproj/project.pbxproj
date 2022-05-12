@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		669BA842282CE4C200265771 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669BA840282CE4C200265771 /* Image.swift */; };
 		669BA843282CE4C200265771 /* NSImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669BA841282CE4C200265771 /* NSImage.swift */; };
-		66AFDCFF282D0D14001B617D /* NSFWModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 669BA84A282CFC3F00265771 /* NSFWModel.mlmodel */; };
 		66B2DBFB282A78090001040B /* NSFW.h in Headers */ = {isa = PBXBuildFile; fileRef = 66B2DBF8282A78090001040B /* NSFW.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		66B2DC28282A79720001040B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B2DC27282A79720001040B /* AppDelegate.swift */; };
 		66B2DC2A282A79720001040B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B2DC29282A79720001040B /* SceneDelegate.swift */; };
@@ -26,12 +25,12 @@
 		66B2DC51282AAB6E0001040B /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B2DC50282AAB6E0001040B /* ResultViewController.swift */; };
 		66B2DC56282AB5210001040B /* UIStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B2DC55282AB5210001040B /* UIStoryboard.swift */; };
 		66B2DC5A282AB9090001040B /* Float.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B2DC59282AB9090001040B /* Float.swift */; };
+		66E4455F282D37E2001BEFC2 /* NSFWModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 66E4455E282D37E2001BEFC2 /* NSFWModel.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		669BA840282CE4C200265771 /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		669BA841282CE4C200265771 /* NSImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSImage.swift; sourceTree = "<group>"; };
-		669BA84A282CFC3F00265771 /* NSFWModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = NSFWModel.mlmodel; sourceTree = "<group>"; };
 		66B2DBF5282A78090001040B /* NSFW.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NSFW.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		66B2DBF8282A78090001040B /* NSFW.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSFW.h; sourceTree = "<group>"; };
 		66B2DC25282A79720001040B /* NSFWExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSFWExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +50,7 @@
 		66B2DC50282AAB6E0001040B /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		66B2DC55282AB5210001040B /* UIStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStoryboard.swift; sourceTree = "<group>"; };
 		66B2DC59282AB9090001040B /* Float.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Float.swift; sourceTree = "<group>"; };
+		66E4455E282D37E2001BEFC2 /* NSFWModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = NSFWModel.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,7 +139,7 @@
 		66B2DC39282A7A330001040B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				669BA84A282CFC3F00265771 /* NSFWModel.mlmodel */,
+				66E4455E282D37E2001BEFC2 /* NSFWModel.mlmodel */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -322,7 +322,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66AFDCFF282D0D14001B617D /* NSFWModel.mlmodel in Sources */,
+				66E4455F282D37E2001BEFC2 /* NSFWModel.mlmodel in Sources */,
 				669BA842282CE4C200265771 /* Image.swift in Sources */,
 				66B2DC40282A7C720001040B /* SuccessResult.swift in Sources */,
 				66B2DC42282A81510001040B /* Result.swift in Sources */,

@@ -13,9 +13,7 @@ public class Detector {
 
     public required init() {
         let configuration = MLModelConfiguration()
-        let bundle = Bundle(identifier: "ai.smartclick.NSFW")!
-        let url = bundle.url(forResource: "NSFWModel", withExtension:"mlmodelc")!
-        guard let nsfwModel = try? VNCoreMLModel(for: MLModel(contentsOf: url, configuration: configuration)) else {
+        guard let nsfwModel = try? VNCoreMLModel(for: NSFWModel(configuration: configuration).model) else {
             fatalError("NSFW Model should always be valid")
         }
         self.nsfwModel = nsfwModel
