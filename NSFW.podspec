@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "NSFW"
-  spec.version      = "0.0.4"
+  spec.version      = "0.0.5"
   spec.summary      = "The NSFW detector automatically identifies any inappropriate content in images."
 
   spec.description  = <<-DESC
@@ -18,6 +18,6 @@ Our adult content detection technology scans images and filters out any offensiv
   spec.swift_version = "4.2"
 
   spec.source       = { :git => "https://github.com/smartclick/NSFW.git", :tag => "#{spec.version}" }
-  spec.source_files = "Sources", "Sources/**/*.{h,m}"
+  spec.source_files = "Sources", "Sources/**/*.{h,m, swift}"
 
 end

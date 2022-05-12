@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		669BA842282CE4C200265771 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669BA840282CE4C200265771 /* Image.swift */; };
+		669BA843282CE4C200265771 /* NSImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669BA841282CE4C200265771 /* NSImage.swift */; };
 		66B2DBFB282A78090001040B /* NSFW.h in Headers */ = {isa = PBXBuildFile; fileRef = 66B2DBF8282A78090001040B /* NSFW.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		66B2DC28282A79720001040B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B2DC27282A79720001040B /* AppDelegate.swift */; };
 		66B2DC2A282A79720001040B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B2DC29282A79720001040B /* SceneDelegate.swift */; };
@@ -27,6 +29,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		669BA840282CE4C200265771 /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		669BA841282CE4C200265771 /* NSImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSImage.swift; sourceTree = "<group>"; };
 		66B2DBF5282A78090001040B /* NSFW.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NSFW.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		66B2DBF8282A78090001040B /* NSFW.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSFW.h; sourceTree = "<group>"; };
 		66B2DC25282A79720001040B /* NSFWExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSFWExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -146,6 +150,8 @@
 			isa = PBXGroup;
 			children = (
 				66B2DC44282A83E20001040B /* Array.swift */,
+				669BA840282CE4C200265771 /* Image.swift */,
+				669BA841282CE4C200265771 /* NSImage.swift */,
 				66B2DC46282A877D0001040B /* UIImage.swift */,
 			);
 			path = Extensions;
@@ -308,9 +314,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				669BA842282CE4C200265771 /* Image.swift in Sources */,
 				66B2DC40282A7C720001040B /* SuccessResult.swift in Sources */,
 				66B2DC42282A81510001040B /* Result.swift in Sources */,
 				66B2DC3E282A7B650001040B /* Detector.swift in Sources */,
+				669BA843282CE4C200265771 /* NSImage.swift in Sources */,
 				66B2DC45282A83E20001040B /* Array.swift in Sources */,
 				66B2DC3B282A7A330001040B /* NSFW.mlmodel in Sources */,
 				66B2DC47282A877D0001040B /* UIImage.swift in Sources */,
@@ -476,6 +484,7 @@
 		66B2DBFF282A78090001040B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -496,7 +505,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ai.smartclick.NSFW;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = "";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "watchsimulator watchos macosx iphonesimulator iphoneos appletvsimulator appletvos";
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 4.2;
@@ -507,6 +518,7 @@
 		66B2DC00282A78090001040B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -527,7 +539,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ai.smartclick.NSFW;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = "";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "watchsimulator watchos macosx iphonesimulator iphoneos appletvsimulator appletvos";
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 4.2;
