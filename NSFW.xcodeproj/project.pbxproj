@@ -26,7 +26,7 @@
 		66B2DC56282AB5210001040B /* UIStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B2DC55282AB5210001040B /* UIStoryboard.swift */; };
 		66B2DC5A282AB9090001040B /* Float.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B2DC59282AB9090001040B /* Float.swift */; };
 		66E44565282D4239001BEFC2 /* NSFWModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E44564282D4239001BEFC2 /* NSFWModel.swift */; };
-		66E44567282D4271001BEFC2 /* NSFWModel.mlmodelc in Resources */ = {isa = PBXBuildFile; fileRef = 66E44566282D4271001BEFC2 /* NSFWModel.mlmodelc */; };
+		66E44569282D48EA001BEFC2 /* NSFWModel.mlmodelc in Resources */ = {isa = PBXBuildFile; fileRef = 66E44568282D48E9001BEFC2 /* NSFWModel.mlmodelc */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,7 +52,7 @@
 		66B2DC55282AB5210001040B /* UIStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStoryboard.swift; sourceTree = "<group>"; };
 		66B2DC59282AB9090001040B /* Float.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Float.swift; sourceTree = "<group>"; };
 		66E44564282D4239001BEFC2 /* NSFWModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSFWModel.swift; sourceTree = "<group>"; };
-		66E44566282D4271001BEFC2 /* NSFWModel.mlmodelc */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = NSFWModel.mlmodelc; sourceTree = "<group>"; };
+		66E44568282D48E9001BEFC2 /* NSFWModel.mlmodelc */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = NSFWModel.mlmodelc; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,7 +141,7 @@
 		66B2DC39282A7A330001040B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				66E44566282D4271001BEFC2 /* NSFWModel.mlmodelc */,
+				66E44568282D48E9001BEFC2 /* NSFWModel.mlmodelc */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -305,7 +305,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66E44567282D4271001BEFC2 /* NSFWModel.mlmodelc in Resources */,
+				66E44569282D48EA001BEFC2 /* NSFWModel.mlmodelc in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

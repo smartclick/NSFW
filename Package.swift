@@ -15,7 +15,7 @@ let package = Package(
             name: "NSFW",
             dependencies: [],
             path: "Sources",
-            resources: [.copy("NSFW/Resources/NSFWModel.mlmodelc")])
+            resources: [.copy("NSFW/Resources")])
     ],
     swiftLanguageVersions: [.v4_2]
 )
