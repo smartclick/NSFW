@@ -18,6 +18,6 @@ Our adult content detection technology scans images and filters out any offensiv
   spec.swift_version = "4.2"
 
   spec.source       = { :git => "https://github.com/smartclick/NSFW.git", :tag => "#{spec.version}" }
-  spec.source_files = "Sources", "Sources/**/*.{h,m, swift}"
+  spec.source_files = ["Sources/**/*.{h,m, swift}"]
 
 end
