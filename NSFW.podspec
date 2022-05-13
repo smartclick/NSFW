@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "NSFW"
-  spec.version      = "0.0.7"
+  spec.version      = "1.0.0"
   spec.summary      = "The NSFW detector automatically identifies any inappropriate content in images."
 
   spec.description  = <<-DESC
