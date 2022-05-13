@@ -5,8 +5,6 @@
 <p align="center">
 <a href="https://cocoapods.org/pods/NSFW"><img src="https://img.shields.io/cocoapods/v/NSFW.svg?style=flat"></a>
 <a href="https://github.com/Carthage/Carthage/"><img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat"></a>
-<a href="https://swift.org/package-manager/"><img src="https://img.shields.io/badge/SPM-supported-DE5C43.svg?style=flat"></a>
-<br />
 <a href="https://raw.githubusercontent.com/smartclick/NSFW/master/LICENSE"><img src="https://img.shields.io/cocoapods/l/Kingfisher.svg?style=flat"></a>
 <a href="https://smartclick.ai/api/nsfw-detection/"><img src="https://img.shields.io/cocoapods/p/NSFW.svg?style=flat"></a>
 </p>
