@@ -18,4 +18,9 @@ extension Float {
         }
         return string
     }
+    
+    func toStringPercent(decimal: Int = 9) -> String {
+        let perc = self*100
+        return "- \(perc.toString(decimal: 2))%"
+    }
 }

@@ -15,6 +15,8 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var uploadButtonShadowView: UIView!
     @IBOutlet weak var takeButton: UIButton!
     @IBOutlet weak var takeButtonShadowView: UIView!
+    @IBOutlet weak var attachLinkButton: UIButton!
+    @IBOutlet weak var attachLinkButtonShadowView: UIView!
     @IBOutlet weak var loader: UIActivityIndicatorView!
     
     lazy var detector: Detector = {
@@ -43,6 +45,15 @@ extension HomeViewController {
     @IBAction func takeButtonAction(_ sender: Any) {
         presentImagePicker(sourceType: .camera)
     }
+
+    
+    @IBAction func attachLinkButtonAction(_ sender: Any) {
+        let linkVC = UIStoryboard.instantiateLinkViewController()
+        linkVC.modalPresentationStyle = .overFullScreen
+        linkVC.modalTransitionStyle = .crossDissolve
+        linkVC.delegate = self
+        present(linkVC, animated: true)
+    }
 }
 
 // MARK: - Private methods
@@ -54,6 +65,11 @@ extension HomeViewController {
                                           opacity: 1,
                                           cornerRadius: 10)
         takeButtonShadowView.dropShadow(offSet: CGSize(width: 0, height: 1),
+                                          color: UIColor.black.withAlphaComponent(0.16),
+                                          radius: 10,
+                                          opacity: 1,
+                                          cornerRadius: 10)
+        attachLinkButtonShadowView.dropShadow(offSet: CGSize(width: 0, height: 1),
                                           color: UIColor.black.withAlphaComponent(0.16),
                                           radius: 10,
                                           opacity: 1,
@@ -77,7 +93,7 @@ extension HomeViewController {
             self.loader.stopAnimating()
             switch result {
             case .error(let error):
-                print(error.localizedDescription)
+                self.showAlert(withMessage: error.localizedDescription)
             case .success(let successResult):
                 print(successResult)
                 self.showResultsViewController(result: successResult, image: image)
@@ -112,6 +128,28 @@ extension HomeViewController: UIImagePickerControllerDelegate, UINavigationContr
     }
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        picker.dismiss(animated: true)
         print("Image not selected")
+    }
+}
+
+// MARK: - LinkViewController Delegate methods
+extension HomeViewController: LinkViewControllerDelegate {
+    func didAttachedLink(linkStr: String) {
+        guard let url = URL(string: linkStr) else {
+            return
+        }
+        loader.startAnimating()
+        DispatchQueue.global().async {
+            if let data = try? Data(contentsOf: url), let image = UIImage(data: data) {
+                DispatchQueue.main.async {
+                    self.imageSelected(image: image)
+                }
+            } else {
+                DispatchQueue.main.async {
+                    self.showAlert(withMessage: "Something went wrong")
+                }
+            }
+        }
     }
 }

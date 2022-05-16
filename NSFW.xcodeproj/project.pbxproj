@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		668BAC8428322CF500CAFF69 /* NSFW.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66B2DBF5282A78090001040B /* NSFW.framework */; platformFilter = ios; };
+		668BAC8528322CF500CAFF69 /* NSFW.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 66B2DBF5282A78090001040B /* NSFW.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		668BAC8A28323B6100CAFF69 /* LinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668BAC8928323B6100CAFF69 /* LinkViewController.swift */; };
+		668BAC8C28324E2600CAFF69 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668BAC8B28324E2600CAFF69 /* ViewController.swift */; };
 		669BA842282CE4C200265771 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669BA840282CE4C200265771 /* Image.swift */; };
 		669BA843282CE4C200265771 /* NSImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669BA841282CE4C200265771 /* NSImage.swift */; };
 		66B2DBFB282A78090001040B /* NSFW.h in Headers */ = {isa = PBXBuildFile; fileRef = 66B2DBF8282A78090001040B /* NSFW.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -29,7 +33,33 @@
 		66E44569282D48EA001BEFC2 /* NSFWModel.mlmodelc in Resources */ = {isa = PBXBuildFile; fileRef = 66E44568282D48E9001BEFC2 /* NSFWModel.mlmodelc */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		668BAC8628322CF500CAFF69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 66B2DBEC282A78090001040B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 66B2DBF4282A78090001040B;
+			remoteInfo = NSFW;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		668BAC8828322CF500CAFF69 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				668BAC8528322CF500CAFF69 /* NSFW.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		668BAC8928323B6100CAFF69 /* LinkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkViewController.swift; sourceTree = "<group>"; };
+		668BAC8B28324E2600CAFF69 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		669BA840282CE4C200265771 /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		669BA841282CE4C200265771 /* NSImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSImage.swift; sourceTree = "<group>"; };
 		66B2DBF5282A78090001040B /* NSFW.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NSFW.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				668BAC8428322CF500CAFF69 /* NSFW.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,6 +222,7 @@
 			isa = PBXGroup;
 			children = (
 				66B2DC2B282A79720001040B /* HomeViewController.swift */,
+				668BAC8928323B6100CAFF69 /* LinkViewController.swift */,
 				66B2DC50282AAB6E0001040B /* ResultViewController.swift */,
 			);
 			path = ViewControllers;
@@ -210,6 +242,7 @@
 				66B2DC4C282AA88F0001040B /* UIView.swift */,
 				66B2DC55282AB5210001040B /* UIStoryboard.swift */,
 				66B2DC59282AB9090001040B /* Float.swift */,
+				668BAC8B28324E2600CAFF69 /* ViewController.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -253,10 +286,12 @@
 				66B2DC21282A79720001040B /* Sources */,
 				66B2DC22282A79720001040B /* Frameworks */,
 				66B2DC23282A79720001040B /* Resources */,
+				668BAC8828322CF500CAFF69 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				668BAC8728322CF500CAFF69 /* PBXTargetDependency */,
 			);
 			name = NSFWExample;
 			productName = NSFWExample;
@@ -341,8 +376,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				668BAC8A28323B6100CAFF69 /* LinkViewController.swift in Sources */,
 				66B2DC56282AB5210001040B /* UIStoryboard.swift in Sources */,
 				66B2DC51282AAB6E0001040B /* ResultViewController.swift in Sources */,
+				668BAC8C28324E2600CAFF69 /* ViewController.swift in Sources */,
 				66B2DC2C282A79720001040B /* HomeViewController.swift in Sources */,
 				66B2DC5A282AB9090001040B /* Float.swift in Sources */,
 				66B2DC28282A79720001040B /* AppDelegate.swift in Sources */,
@@ -352,6 +389,15 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		668BAC8728322CF500CAFF69 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			platformFilter = ios;
+			target = 66B2DBF4282A78090001040B /* NSFW */;
+			targetProxy = 668BAC8628322CF500CAFF69 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		66B2DC2D282A79720001040B /* Main.storyboard */ = {
@@ -574,8 +620,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 5DRZXA3262;
+				FRAMEWORK_SEARCH_PATHS = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NSFWExample/Application/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "This app would like to access your Camer to take photos for checking NSFW";
@@ -586,6 +633,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -609,8 +657,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 5DRZXA3262;
+				FRAMEWORK_SEARCH_PATHS = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NSFWExample/Application/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "This app would like to access your Camer to take photos for checking NSFW";
@@ -621,6 +670,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

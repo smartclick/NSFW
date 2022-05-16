@@ -17,4 +17,9 @@ extension UIStoryboard {
         return vc as! ResultViewController
     }
     
+    static func instantiateLinkViewController() -> LinkViewController {
+        let vc = UIStoryboard.main().instantiateViewController(withIdentifier: String(describing: LinkViewController.self))
+        return vc as! LinkViewController
+    }
+    
 }
