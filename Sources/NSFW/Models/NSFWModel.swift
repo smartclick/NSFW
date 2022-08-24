@@ -11,7 +11,7 @@ import CoreML
 @available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
 class NSFWModelInput : MLFeatureProvider {
 
-    /// input_1 as color (kCVPixelFormatType_32BGRA) image buffer, 224 pixels wide by 224 pixels high
+    /// input_1 as color (kCVPixelFormatType_32BGRA) image buffer, 448 pixels wide by 448 pixels high
     var input_1: CVPixelBuffer
 
     var featureNames: Set<String> {
@@ -32,19 +32,19 @@ class NSFWModelInput : MLFeatureProvider {
     }
 
     convenience init(input_1With input_1: CGImage) throws {
-        self.init(input_1: try MLFeatureValue(cgImage: input_1, pixelsWide: 224, pixelsHigh: 224, pixelFormatType: kCVPixelFormatType_32ARGB, options: nil).imageBufferValue!)
+        self.init(input_1: try MLFeatureValue(cgImage: input_1, pixelsWide: 448, pixelsHigh: 448, pixelFormatType: kCVPixelFormatType_32ARGB, options: nil).imageBufferValue!)
     }
 
     convenience init(input_1At input_1: URL) throws {
-        self.init(input_1: try MLFeatureValue(imageAt: input_1, pixelsWide: 224, pixelsHigh: 224, pixelFormatType: kCVPixelFormatType_32ARGB, options: nil).imageBufferValue!)
+        self.init(input_1: try MLFeatureValue(imageAt: input_1, pixelsWide: 448, pixelsHigh: 448, pixelFormatType: kCVPixelFormatType_32ARGB, options: nil).imageBufferValue!)
     }
 
     func setInput_1(with input_1: CGImage) throws  {
-        self.input_1 = try MLFeatureValue(cgImage: input_1, pixelsWide: 224, pixelsHigh: 224, pixelFormatType: kCVPixelFormatType_32ARGB, options: nil).imageBufferValue!
+        self.input_1 = try MLFeatureValue(cgImage: input_1, pixelsWide: 448, pixelsHigh: 448, pixelFormatType: kCVPixelFormatType_32ARGB, options: nil).imageBufferValue!
     }
 
     func setInput_1(with input_1: URL) throws  {
-        self.input_1 = try MLFeatureValue(imageAt: input_1, pixelsWide: 224, pixelsHigh: 224, pixelFormatType: kCVPixelFormatType_32ARGB, options: nil).imageBufferValue!
+        self.input_1 = try MLFeatureValue(imageAt: input_1, pixelsWide: 448, pixelsHigh: 448, pixelFormatType: kCVPixelFormatType_32ARGB, options: nil).imageBufferValue!
     }
 
 }
@@ -256,7 +256,7 @@ class NSFWModel {
         Make a prediction using the convenience interface
 
         - parameters:
-            - input_1 as color (kCVPixelFormatType_32BGRA) image buffer, 224 pixels wide by 224 pixels high
+            - input_1 as color (kCVPixelFormatType_32BGRA) image buffer, 448 pixels wide by 448 pixels high
 
         - throws: an NSError object that describes the problem
 

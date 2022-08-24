@@ -45,12 +45,12 @@
     "generatedClassName" : "NSFWModel",
     "inputSchema" : [
       {
-        "height" : "224",
+        "height" : "448",
         "colorspace" : "RGB",
         "isOptional" : "0",
-        "width" : "224",
+        "width" : "448",
         "isColor" : "1",
-        "formattedType" : "Image (Color 224 × 224)",
+        "formattedType" : "Image (Color 448 × 448)",
         "hasSizeFlexibility" : "0",
         "type" : "Image",
         "shortDescription" : "",

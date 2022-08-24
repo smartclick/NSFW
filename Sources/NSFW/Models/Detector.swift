@@ -20,7 +20,7 @@ public class Detector {
     }
         
     public func scan(image: ImageType, completion: @escaping (_ result: Result) -> Void) {
-        let resizedImage = image.resized(to: CGSize(width: 224, height: 224))
+        let resizedImage = image.resized(to: CGSize(width: 448, height: 448))
         let requestHandler: VNImageRequestHandler?
         if let cgImage = resizedImage.cgImage {
             requestHandler = VNImageRequestHandler(cgImage: cgImage, options: [:])

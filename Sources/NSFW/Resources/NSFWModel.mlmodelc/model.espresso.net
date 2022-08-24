@@ -2154,7 +2154,7 @@
       "pad_fill_mode" : 0,
       "pad_b" : 0,
       "pad_l" : 0,
-      "size_x" : 7,
+      "size_x" : 14,
       "is_global" : 1,
       "top" : "814",
       "top_shape_style" : 0,
@@ -2170,7 +2170,7 @@
 
       },
       "pad_mode" : 2,
-      "size_y" : 7,
+      "size_y" : 14,
       "pad_value" : 0
     },
     {
@@ -2199,7 +2199,7 @@
       "weights" : {
 
       },
-      "nC" : 5,
+      "nC" : 3,
       "blob_weights" : 211,
       "type" : "inner_product",
       "has_relu" : 0,
